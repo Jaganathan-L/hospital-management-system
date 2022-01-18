@@ -1,0 +1,48 @@
+<div class="container" id="contain">
+    <div class="row">
+        <div class="card col-md-6 offset-md-3 offset-md-3">
+            <div class="row">
+                <h3 class="text-center"> Create Patient </h3>
+                <hr />
+                <div class="card-body">
+                    <form (ngSubmit)="onSubmit()">
+
+                        <div class="form-group">
+                            <label> Id</label>
+                            <input type="number" class="form-control" id="patient_id" [(ngModel)]="patient.patient_id" name="patient_id" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label> Name</label>
+                            <input type="text" class="form-control" id="patient_name" [(ngModel)]="patient.patient_name" name="patient_name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label> Visited Doctor</label>
+
+                            <select class="form-control" id="patient_visitedDoctor" [(ngModel)]="patient.patient_visitedDoctor" name="patient_visitedDoctor">
+                                <option disabled >choose the option</option>
+                                <option >Dr.N.Srinivasan</option>
+                                <option>Dr.S.Wilson</option>
+                                <option>Dr.M.Chandrasekar</option>
+                                <option>Dr.K.Saraswathi</option>
+                                <option>Dr.P.Priyadharshini</option> 
+                                
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label> Date Of Visit</label>
+                            <input type="date" class="form-control" id="patient_dateOfVisit" [(ngModel)]="patient.patient_dateOfVisit" name="patient_dateOfVisit" required>
+                        </div>
+
+                        <br />
+                        <button type="submit" class="btn" type="submit" style="background-color: #0E2E47;color: white;">Submit</button>
+
+                    </form>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

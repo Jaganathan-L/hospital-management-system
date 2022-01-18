@@ -1,0 +1,9 @@
+{
+    "signupUser": [{
+        "fullname": "Jaganathan",
+        "email": "ljagan30@gmail.com",
+        "password": "pass",
+        "mobile": 9123585909,
+        "id": 1
+    }]
+}

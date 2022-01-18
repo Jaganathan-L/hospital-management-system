@@ -1,0 +1,82 @@
+<div class="container-fluid" id="box">
+    <h1 class="text-center"> {{title}} </h1>
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark" id="nav" style="background-color:#0E2E47 ;">
+        <ul class="navbar-nav">
+            <li class="nav-item" style=" list-style: none;">
+                <a routerLink="doctors" routerLinkActive="active" class="nav-link" class="btn btn-primary active" role="button" style="background-color: #03406e;">Doctor List</a>
+            </li>
+            <li class="nav-item" style=" list-style: none;">
+                <a routerLink="create-doctor" routerLinkActive="active" class="nav-link" class="btn btn-primary active" role="button" style="background-color: #03406e;">Add Doctor</a>
+            </li>
+            <li class="nav-item" style=" list-style: none;">
+                <a routerLink="patients" routerLinkActive="active" class="nav-link" class="btn btn-primary active" role="button" style="background-color: #03406e;">Patient List</a>
+            </li>
+            <li class="nav-item" style=" list-style: none;">
+                <a routerLink="create-patient" routerLinkActive="active" class="nav-link" class="btn btn-primary active" role="button" style="background-color: #03406e;">Add Patient</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container" id="cn">
+        <router-outlet></router-outlet>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="sec aboutus">
+            <h2>About Us</h2>
+            <p>Padmashri Prof. Dr. P. V. A. Mohan started the Madras Institute of Healthcare(M.I.O.H) on 12 February, 1999, as a 70-bed hospital, with full-time doctors, focussed primarily on Orthopaedics and Trauma Care. It was soon apparent that some of
+                the trauma patients.</p>
+
+            <ul class="sci">
+                <li>
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-youtube" aria-hidden="true" ></i></a>
+                </li>
+            </ul>
+        </div>
+        <div class="sec quickLinks">
+            <h2>Advanced Treatment</h2>
+            <ul>
+                <li><a href="#">Physiotherapy</a></li>
+                <li><a href="#">Robotic Surgery</a></li>
+                <li><a href="#">Organ Transplantation</a></li>
+                <li><a href="#">Laser Treatment</a></li>
+                <li><a href="#">Emergency</a></li>
+            </ul>
+        </div>
+        <div class="sec contact">
+
+            <h2>Contact Info</h2>
+            <ul class="info">
+                <li>
+                    <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                    <span> 647 Linda Street<br>
+                    Phoenxville, Pa 19256, <br>USA</span>
+                </li>
+                <li>
+                    <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                    <p><a href="tel:9476468930">+1 234 567 8900</a></p>
+                    <p><a href="tel:9476468930">+1 234 567 8560</a></p>
+                </li>
+                <li>
+                    <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                    <p><a href="mailto:knowmore@gmail.com">knowmore@gmail.com</a></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</footer>
+<div class="copyrightText">
+    <p>Copyright © 2021
+        <a href="#!"> Healthcare.com</a>. All Rights Reserved.</p>
+</div>

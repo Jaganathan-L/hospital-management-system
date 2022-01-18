@@ -1,0 +1,19 @@
+<!-- <p>login works!</p> -->
+<div class="container" id="center">
+    <div class="header">
+        Login Form
+    </div>
+    <form>
+        <form [formGroup]="loginForm" (ngSubmit)="login()">
+            <input formControlName="email" type="text" placeholder="Email or Username">
+            <i class="far fa-envelope"></i>
+            <input formControlName="password" id="pswrd" type="password" placeholder="Password">
+            <i class="fas fa-lock" id="pass"></i>
+            <input type="submit" value="Sign in">
+            <a routerLink="#">Forgot Password?</a>
+        </form>
+        <a routerLink="/signup">New User? Click here to SignUp!!</a>
+    </form>
+
+
+</div>
