@@ -20,9 +20,10 @@
             <td> {{ doctor.doctor_gender }} </td>
             <td> {{ doctor.doctor_specialistFields }} </td>
             <td>
-                <button (click)="updateDoctor(doctor.doctor_id)" class="btn btn-primary"> Update</button>
-                <button (click)="deleteDoctor(doctor.doctor_id)" class="btn btn-danger" style="margin-left: 10px"> Delete</button>
-                <button (click)="doctorDetails(doctor.doctor_id)" class="btn btn-primary" style="margin-left: 10px"> View</button>
+
+                <a (click)="updateDoctor(doctor.doctor_id)"><i class="fa fa-edit" aria-hidden="true" > Update</i></a>
+                <a (click)="deleteDoctor(doctor.doctor_id)"><i class="fa fa-trash" aria-hidden="true"style="margin-left: 10px"> Delete</i></a>
+                <a (click)="doctorDetails(doctor.doctor_id)"><i class="fa fa-eye" aria-hidden="true"style="margin-left: 10px"> View</i></a>
             </td>
         </tr>
     </tbody>

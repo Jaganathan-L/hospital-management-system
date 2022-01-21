@@ -34,6 +34,5 @@ export class CreateDoctorComponent implements OnInit {
 
     console.log(this.doctor);
     this.saveDoctor();
-   // this.router.navigate(['/doctors']);
   }
 }

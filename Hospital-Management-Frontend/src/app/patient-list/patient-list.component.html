@@ -18,9 +18,12 @@
             <td> {{ patient.patient_visitedDoctor }} </td>
             <td> {{ patient.patient_dateOfVisit | date:'longDate' }} </td>
             <td>
-                <button (click)="updatePatient(patient.patient_id)" class="btn btn-primary"> Update</button>
-                <button (click)="deletePatient(patient.patient_id)" class="btn btn-danger" style="margin-left: 10px"> Delete</button>
-                <button (click)="patientDetails(patient.patient_id)" class="btn btn-primary" style="margin-left: 10px"> View</button>
+                <!--<button (click)="updatePatient(patient.patient_id)" class="fad fa-edit"> Update</button>
+                <button (click)="deletePatient(patient.patient_id)" class="fa fa-trash" style="margin-left: 10px"> Delete</button>
+                <button (click)="patientDetails(patient.patient_id)" class="fa fa-eye" style="margin-left: 10px"> View</button> -->
+                <a (click)="updatePatient(patient.patient_id)"><i class="fa fa-edit" aria-hidden="true" > Update</i></a>
+                <a (click)="deletePatient(patient.patient_id)"><i class="fa fa-trash" aria-hidden="true"style="margin-left: 10px"> Delete</i></a>
+                <a (click)="patientDetails(patient.patient_id)"><i class="fa fa-eye" aria-hidden="true"style="margin-left: 10px"> View</i></a>
             </td>
         </tr>
     </tbody>

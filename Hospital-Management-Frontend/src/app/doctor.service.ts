@@ -39,6 +39,7 @@ export class DoctorService {
   deleteDoctor(id: number): Observable<Object>{
     return this.httpClient.delete(`${this.url}/${id}`);
   }
+
 }
 
 
@@ -59,47 +60,3 @@ export class DoctorService {
 
 
 
-
-
-
-
-
-
-
-
-
-// import { Injectable } from '@angular/core';
-// import { HttpClient } from '@angular/common/http';  
-// import { Observable } from 'rxjs'; 
-
-// @Injectable({
-//   providedIn: 'root'
-// })
-// export class DoctorService {
-//   getDoctors() {
-//     throw new Error('Method not implemented.');
-//   }
-//   private baseUrl = 'http://localhost:8090/api/';  
-  
-//   constructor(private http:HttpClient) { }  
-  
-//   getDoctorList(): Observable<any> {  
-//     return this.http.get(`${this.baseUrl}`+'doctors-list');  
-//   }  
-  
-//   createDoctor(doctor: object): Observable<object> {  
-//     return this.http.post(`${this.baseUrl}`+'save-doctor', doctor);  
-//   }  
-  
-//   deleteDoctor(id: number): Observable<any> {  
-//     return this.http.delete(`${this.baseUrl}/delete-doctor/${id}`, { responseType: 'text' });  
-//   }  
-  
-//   getDoctor(id: number): Observable<Object> {  
-//     return this.http.get(`${this.baseUrl}/doctor/${id}`);  
-//   }  
-  
-//   updateDoctor(id: number, value: any): Observable<Object> {  
-//     return this.http.post(`${this.baseUrl}/update-doctor/${id}`, value);  
-//   }  
-// }
